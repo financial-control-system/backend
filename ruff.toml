@@ -1,0 +1,22 @@
+exclude = [
+    ".cache/*",
+    ".venv",
+    "migrations",
+]
+
+target-version = "py312"
+line-length = 120
+
+[lint]
+extend-select = [
+    "I",  # isort
+    "E",  # pycodestyle
+    "F",  # pyflakes
+    "UP",  # pyupgrade
+    "B",  # flake8-bugbear
+    "SIM",  # flake8-simplify
+    'DJ',  # django
+]
+
+[format]
+quote-style = "single"
